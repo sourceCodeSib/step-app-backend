@@ -131,7 +131,9 @@ CORS_ALLOWED_ORIGINS = [
   "https://la-familia-steps.netlify.app"
 ]
 
-CORS_ALLOW_HEADERS = list(default_headers) + [
-  'token',
-  'Content-Type'
-]
+CORS_ALLOW_HEADERS = (
+    *default_headers,
+    "tokens",
+)
+
+CORS_ALLOW_CREDENTIALS: True

@@ -133,7 +133,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_HEADERS = (
     *default_headers,
-    "tokens",
+    "token",
 )
 
 CORS_ALLOW_CREDENTIALS: True

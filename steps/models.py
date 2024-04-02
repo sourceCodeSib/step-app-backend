@@ -12,7 +12,7 @@ class User(models.Model):
         token = request.headers.get('token')
         print(token)
         if not token:
-            return false
+            return False
         try:
             return cls.objects.get(id_token=token)
         except:

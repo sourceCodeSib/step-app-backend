@@ -127,9 +127,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://sibi-dev-app.top",
+    "https://la-familia-steps.netlify.app"
+]
+
 CORS_ALLOWED_ORIGINS = [
-  "https://la-familia-steps.netlify.app",
-  "https://sibi-dev-app.top"
+    "https://la-familia-steps.netlify.app",
+    "https://sibi-dev-app.top"
 ]
 
 CORS_ALLOW_HEADERS = (
